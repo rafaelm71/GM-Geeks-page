@@ -1,12 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '../styles/global.css'
-
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { IconBrandLinkedin, IconBrandWhatsapp, IconMail, IconBrandInstagram } from '@tabler/icons-react';
 ---
 
-<Layout title="Home">
-	<img src="/mantenimiento.png" alt="Página en mantenimiento" class="mx-auto max-w-full h-auto mb-6">
-</Layout>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GM Geeks - Coming Soon</title>
+  </head>
+  <body class="m-0 p-0">
+    <div class="relative w-screen h-screen">
+      <img src="/mantenimiento.png" alt="Coming Soon" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center px-4">
+        <img src="/logo.png" alt="GM Geeks Logo" class="w-32 h-auto mb-6" />
+        <h1 class="text-white text-5xl font-bold mb-4">¡Estamos trabajando en algo genial!</h1>
+        <p class="text-white text-lg mb-8 max-w-xl">
+          En GM Geeks brindamos soluciones tecnológicas innovadoras. Pronto lanzaremos nuestro sitio web oficial.
+        </p>
+        <div class="flex gap-4">
+          <a href="https://wa.me/1809769038" target="_blank" rel="noopener" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">
+            <IconBrandWhatsapp class="inline mr-2" /> WhatsApp
+          </a>
+          <a href="mailto:info@gmgeeks.tech" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
+            <IconMail class="inline mr-2" /> Escríbenos
+          </a>
+          <a href="https://linkedin.com/company/gmgeeks" target="_blank" rel="noopener" class="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-900 transition">
+            <IconBrandLinkedin class="inline mr-2" /> LinkedIn
+          </a>
+		  <a href="https://instagram.com/gm.geeks" target="_blank" rel="noopener" class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white px-4 py-2 rounded-full hover:brightness-110 transition">
+			<IconBrandInstagram class="inline mr-2" /> Instagram
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
